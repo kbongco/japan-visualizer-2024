@@ -2,16 +2,17 @@
 defineProps<{
   msg: string
 }>()
-console.log('test');
 </script>
 
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with testing one one one
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
+      Hello this is a mini project I created with Vue! I wanted to get some Vue practice in since that is what I am currently learning and I just got back from a trip in Japan so I decided to create this.<br/>
+      <div class="social-links">
+      <a href="http://github.com/kbongco" target="_blank" rel="noopener">Github</a> +
+      <a href="https://www.linkedin.com/in/kathleen-bongco-11843197/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </h3>
   </div>
 </template>
@@ -30,6 +31,10 @@ h3 {
 
 .greetings h1,
 .greetings h3 {
+  text-align: left;
+}
+
+.social-links {
   text-align: center;
 }
 
